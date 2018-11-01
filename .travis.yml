@@ -13,6 +13,6 @@ deploy:
         repo: yutaka-kimura/com-only
         branch: dev
 
-ZZbranches:
+branches:
   only: dev
   except: "/^(feature|hotfix).*$/"
