@@ -1,4 +1,5 @@
 <?php
+echo "test";
 echo "Why Japanese People!!";
 echo "Hello World!!";
 echo "dev";
