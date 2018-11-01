@@ -1,5 +1,5 @@
 <?php
-echo "take5";
+echo "take6";
 echo "Why Japanese People!!";
 echo "Hello World!!";
 echo "dev";
