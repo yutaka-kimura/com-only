@@ -1,46 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /public
-    destination: /var/www/travis_test/public
-  - source: /app
-    destination: /var/www/travis_test/app
-  - source: /include
-    destination: /var/www/travis_test/include
-permissions:
-  - object: /var/www/travis_test/public
-    owner: ec2_user
-    group: ec2_user
-    mode: 2775
-    type:
-    - directory
-  - object: /var/www/travis_test/public
-    owner: ec2_user
-    group: ec2_user
-    mode: 664
-    type:
-    - file
-  - object: /var/www/travis_test/app
-    owner: ec2_user
-    group: ec2_user
-    mode: 2775
-    type:
-    - directory
-  - object: /var/www/travis_test/app
-    owner: ec2_user
-    group: ec2_user
-    mode: 664
-    type:
-    - file
-  - object: /var/www/travis_test/include
-    owner: ec2_user
-    group: ec2_user
-    mode: 2775
-    type:
-    - directory
-  - object: /var/www/travis_test/include
-    owner: ec2_user
-    group: ec2_user
-    mode: 664
-    type:
-    - file
+  - source: /index.php
+    destination: /var/www/travis_test/test.php
