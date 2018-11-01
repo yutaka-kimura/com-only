@@ -1,18 +1,16 @@
-language: PHP
+language: php
 script: ''
 deploy:
-  matrix:
-    - provider: codedeploy
-      access_key_id: AKIAIY5E5ZM7OHBWAQZA
-      secret_access_key:
-        secure: iYnxmhtQNQUIMgtA8JLgrOQ8hdE3bN7hhp+56nD4mlVu3M9yKGxL63//safeWA3lOMOl3aIDPiUAcytRrZcrFUsSu9UeIPaBowrpJq/a8tEdp38SwogFVtkjZlBlzcNqU9sXNZ6jRIE4M1/XOEpS9rN6Vs9TGD3w9eza3siffWMpkGOXqln1Mp/6J5zL94DeZ+g6ShdtZxXYiKHG/Es/NPb3/4+biD7esGrtXKdQKRqQuY5v5H0vOY+3T/ZUUNBDX4/T0IXovFok2rxFj03wQfe0kCggo7acYi90WWeiELnbRIhdVlZrJ7PoOKxE+TQ/4Tnz7BjthUaK8BB51OZa5/GvlZqXVLZKyk0975uoX4zuTGnXDQhXMAc/EInohEQbD4qvGUJMcbLWFVNKlazOh8lTJgV9DjEn31nbdpQnZ5o6y4VxCTe0VcVmGZTIBLNfuXSzj87gZ2/Mw6kjsk5pdEiC66sETxc4UkozhqoFrukLelqwMCNECiWivpCfEJIq95zOpq28uXTX6+v9yp94WW9TXIUesXVsZvoadwqTOQz9hck3FjYAG2W4iLcxNeMz8koF1iaWLCx0W1AmNUv2qqcyU4V0jfP5E0u+4Hp4GW3QvtS3L3e9O0ozk3hErVp1oXlFlcgUUMnvrFGOrbztEHkDlwz+VCCO4RyDVbqjvRw=
-      region: ap-northeast-1
-      application: testapp
-      deployment_group: testdeploy
-      on:
-        repo: yutaka-kimura/com-only
-        branches: dev
+  provider: codedeploy
+  access_key_id: AKIAIY5E5ZM7OHBWAQZA
+  secret_access_key:
+    secure: ZN6ywoMpeU8LpKXJGLRG+jxr87hyhnaUH6x5V6bomBI78eZLi5vk19GJ7D74wVXNNksP5uqP+UkqPg788UCiH7JQYhH8KdDHPBmBb7boAFkboJf8DDtPvb11ulzm9OCefGa/dABXGaDr2bZ7MVzq2lSdznMzlF0cV+SloaSBYGD2S945pcQyOlNwOl1ewToQLF2BJS5eQ+xnATXXkXNCO5SiCla5QtwlJNR4iexZJiuLBQ6ugQqEH6vD37w/Lp5QdlaeTcSixFFz/0EB4weHl+Gyv4aPbd1QMrxmqpm39KxBsBngij95d/s7roMM4eO2PemRfAr5jKLLiyMYOQ7KK/aMr5c8vsdJbTvUeCfua347OBc8IhAXh5mT3c5iAAQ8j/Eo48aLqw2JNHvOOU8mJju0gnczpOSvJGIuHHQw7DUpjGgDmnVveVmCIHNEYHoLcZhE3CO63UinfRrAqSrsQXPPgPriDEz87C8iXVQzaq08IW9iIdP08pYrNvs5U5ximXH6+JTqqsrJemjivVfr20AaYcAfWExjVr+qpP5Qw+22oMXkEadeH99dS00krqZUQ8GhojXpmpgJUj6W3BuJHmJraVR0xLaZ2hSudx6v20nPWbMxVDWH2ecX5xLgf0rnPP4Ored7MPwT4I23hwR69GiVJYgnx8DUyXDhEFvx/7o=
+  application: testapp
+  deployment_group: testdeploy
+  on:
+    repo: yutaka-kimura/com-only
+    branch: dev
 
 branches:
   only: dev
-  except: "/^(feature|hotfix).*$/"
+  except: /^(feature|hotfix).*$/
