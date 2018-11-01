@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /public
+    destination: /var/www/travis_test/public
+  - source: /app
+    destination: /var/www/travis_test/app
+  - source: /include
+    destination: /var/www/travis_test/include
