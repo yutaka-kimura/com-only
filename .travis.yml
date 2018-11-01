@@ -1,5 +1,5 @@
 language: php
-scrupt: ''
+script: ''
 deploy:
   provider: codedeploy
   access_key_id: AKIAIY5E5ZM7OHBWAQZA
