@@ -2,18 +2,16 @@ language: php
 script: ''
 deploy:
   provider: codedeploy
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  access_key_id: AKIAIY5E5ZM7OHBWAQZA
+  secret_access_key:
+    secure: WfPZ2gV3aXtHOfjtDp1bV2LAiLoMJnXRMbd5nq5/DwJKnbc6sHOTllxL/gI9US2zRanaHtCynr7mbsvGo2OsR89YEhnY5ikXRdzA9boYDxcdwmdqiNxQqXpSZqxas/c0e19EwxwPEG0AuCMvrXjLbBI1ZntzygcQ9eEOls2HM2GuSXlC/53Fluv4N9yitavWQIVB8fObvGPa9gETXyh7wYn9EVtfgF3LJ5bBF+DZk6dssXRguSelWQttmJId0hO1xvmCc0R5gs/K7QAxWwtgCly1s4JLd4ZMenrn+sVtNR2qGvdgGk0yD2DOvNNjPLI4OgyvEe1dV76vGJ1gUAjodJG+0POjHb0RVH0E5EpwjhF44j/EgC+SdWUuNgYCUPty84g5I2UoPnPlngr7MFVvS6JQkNl/+GG6XPIWSElyiuuwMHZqnD9c4pLCtoTNnI80mUSS6YI+EWTrVyT/WRwwbfyyO5UVRvx6tTZZpsK6PO3xwtgRE0djxEvExxjD6r1p9bgf3K8UNloKmHRWcoa1uNP9e/y+b+zi0lIurqtn7Cm5CJqNx2WN7swIGJKZIQnjiloS7xBvDs1ReSZsLlsRZ41Z6rlPBOErtPYDzAxHp2IuhYksLPt5vwbqob8RKsaK4bJTXjdlbwPwnzvTcY4jBJsVDt3qRQMzxSUt3Hz5nKI=
   region: ap-northeast-1
   application: testapp
   deployment_group: testdeploy
   on:
     repo: yutaka-kimura/com-only
     branch: dev
+
 branches:
   only: dev
   except: "/^(feacure|hotfix).*$/"
-env:
-  global:
-  - AWS_ACCESS_KEY=AKIAIY5E5ZM7OHBWAQZA
-  - secure: pDkdikxoL177r5nxvLuHcI6pXW1npk/W3Cw3lgXwVX5HjchaYoc7nM7wxSM8bhLX4w2HZLuZIw9OrFDwwlScyUdF53NoXwTo/BjXwpB4/yb2F2kL4noivnlfPkk32tCG9/Pjo6U1IiZYgttQCiLMu4T0HadtfwKDLiFzzLJ0N8snJtLr4Lfvwbp8YmaE8tT/M8XSEZ8jOR+4XZdgcVGMY2fzI8PefG3ZrpFVk7RGXzWyPeMt9w2rYIUC9aH20jWyeKG80xXoUDKjZ3ZTfR5LxXgB7ZH/UIF7wBvxvxBEXNNV54Q6vwzo1UawwxSHqBxqHBtgsCT4CyQ9nostNWyNuY31Y/L3bGuK5xaIzvKSC+lcwiCV86PGtBaONuGtvtBbw/LcSsMvRt2T8CXpGXPsJc1ceDFNqYsuEWbuQgjgEo9Tveek/WYu11MczzuiBN8nMi6fIZbXJMPKfQSPvHD1U0JfIZDjUHwdNSsLsvvFSRlO8lARbNcyK8P7j3ki8OT2N5l5gKOm/yfEL0sEEDPah6seqyT20JtwuUvNdDTDOqL5lGmA4vtoP+cRG9Msj5y8Wxq+fFUPSlvJGMoToGbYcDf0h+GZz5SJDx9kd6efyaCdQBHRW4Y6GLA2PPeTlAnG/o3ycFa3j/X3MY6FnYtB8OeF2o+Aeu+v28hsZ0IqAK4=
