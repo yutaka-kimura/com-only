@@ -4,8 +4,7 @@ before_deploy: "echo 'Start Deploy.'"
 deploy:
   provider: codedeploy
   access_key_id: AKIAIY5E5ZM7OHBWAQZA
-  secret_access_key:
-    secure: jjsNO7TEG3y0NHJduIlNRTRWy0mNxLzBRMcP1j9EirxDLQuzvCYu7UY1Ovszs21tdH1jZiOwMqTwTQPT0d7XPpiOc5pK6stAVmDMxKlULc6lzv1uJIE/lbQ89CbKqzNb0/88LnxfhyiW5jP+NMNEb0574Yaqa48jIdAKl2qCbgQk6y+euhOaUnpFqjUmB9+7ZqQXj9Z2pUrarDJCIkbxsHOgGssciMP+Hsp8m+l9wcLhJQjqXA+pXzHHjeRZ9iCwR19PmhA7K3VOnpaae6qDhnhMdIh29rYLRg4TFv6abRB+uhomMtB+IObAIsq/oFefENAaaUzl+syZZWm2WcydMkZ112F2s7XHiRmN+TF7TH99C99DXD5u57EvxUdPJybtPshLi4nVYb+PVjPlJzlS5rdEIjZ8kJhneySMZkOlZdpyB/vwYq0IS4L35HrgDsGTiDsizWXCZw2bRg43CVASo+QnxgMzrci8TYE/BlyrtRnn9fMIuOEeXOd/p/mYsJOAoAwpv94sqVy1i4haceY4Ts893pNX3m/SRyfRDU64xo/EAdmecobGuUoq2wVd/igrlCxFNlFHKST/wYZ/jYZk00+Jyy/3Uc+folMC+L9JDDjdb77/af68sGq0cvRscRvJavALuH+FfExTbSWl9kCppSjUu53A9QmWL/VIyHju+DI=
+  secret_access_key: tPNkS0TaDfyqdhffcIg5mQsxsRMgiMh/5Xrq+NZb
   region: ap-northeast-1
   application: testapp
   deployment_group: testdeploy
