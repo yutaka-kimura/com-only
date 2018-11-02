@@ -1,18 +1,18 @@
 language: php
 script: ''
-before_deploy: "echo 'Start Deploy.'"
+before_deploy: echo 'Start Deploy.'
 deploy:
   provider: codedeploy
   access_key_id: AKIAIY5E5ZM7OHBWAQZA
-  secret_access_key: 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
   region: ap-northeast-1
   application: testapp
   deployment_group: testdeploy
   on:
     repo: yutaka-kimura/com-only
     branch: dev
-after_deploy: "echo 'End Deploy.'"
-
+  secret_access_key:
+    secure: KbHeHo+f8PP67OqTd2P/Je5UUJYLoLMOJkdNln89Ky3H3JWvbuWWZuGlOUDuNM7GJYjI2c8NsgX3VxXBhI1FT6DGPkA3lUXhpc1RziOS6I0ug2Eh9XgWYt+DuiPDDXIxeLSDnY2mL+L2zS9OZvPa8WmacUPy0m7l+FxW62FM0jum79IOBDkf2FPQOWILkw86J0yK/82n02fPuZTU1wuH2SOHnakphA7T3s3/stI/qQaUOk88DpKKQcFAJpfmCHWhDRIT9pnxFEtKJgv7aJfIRDrNOyMt3F+0rPKKIz17UwQrOHvHHMfUUum10mKwr5pBvjVYWThDk4mrrY6Unjoq8w34c8Hmi5pC+HA4C8RhUw19l0uzlRVw+XSSowmvGMXwHNCJZWX8Cn1ibMHmJU+Gy1fFIf2yTUQ+BZ5fv3LZIKTxUjgP9MlfRB64mYJrAmefEsH/4aXsixicJZJ8NbHXSGJIMJjki0sGUsVLzTjXuDMbM1+9308lDXtMI9TCjU8DNbNkrba9tcII75UkfL4+3eXx8fgk0QORbyrLrIeBPIPtJklZmvYkoBjMCK8dElAsDSK0TdZwj9yOPNi/oJQsw/jdj1B1HkacK+R7+q46TkSCJNhfNOCi6kAurLm2KWMl3wpOqR7Rrq/d25o66TZnOPg3hDz8JD7j48v7tD4YPKE=
+after_deploy: echo 'End Deploy.'
 branches:
   only: dev
   except: "/^(feacure|hotfix).*$/"
