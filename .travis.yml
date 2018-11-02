@@ -1,5 +1,6 @@
 language: php
 script: ''
+before_deploy: "echo 'Start Deploy.'"
 deploy:
   provider: codedeploy
   access_key_id: AKIAIY5E5ZM7OHBWAQZA
@@ -11,6 +12,7 @@ deploy:
   on:
     repo: yutaka-kimura/com-only
     branch: dev
+after_deploy: "echo 'End Deploy.'"
 
 branches:
   only: dev
